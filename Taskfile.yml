@@ -6,11 +6,6 @@ tasks:
   build:
     cmds:
       - go build -o .bin/ -v ./...
-  
-  context: 
-    cmds:
-      - task: build
-      - ./.bin/context
 
   test:
     cmds:
